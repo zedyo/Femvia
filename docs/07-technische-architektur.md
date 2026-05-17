@@ -53,8 +53,10 @@ Konsequenz für jetzt: **Logik von UI trennen** (`logic/`, `data/`,
 
 ## Deployment
 
-- GitHub Actions Workflow `.github/workflows/deploy.yml`:
-  Build von `app/` → Upload als Pages-Artefakt → Deploy auf GitHub Pages.
+- Git-Workflow: Entwicklung auf Feature-Branches, Merge nach `main` per
+  Pull Request. `ci.yml` prüft den Build auf jedem PR.
+- `.github/workflows/deploy.yml`: nur bei Push auf `main` – Build von `app/`
+  → `configure-pages` (Auto-Enablement) → Upload Pages-Artefakt → Deploy.
 - `vite.config.ts` `base: '/Femvia/'` (Project Pages unter
   `https://zedyo.github.io/Femvia/`).
 - HashRouter, damit Deep-Links ohne Server-Rewrites funktionieren.

@@ -48,6 +48,10 @@
   gebaut, Konzept-PDF generiert, GitHub-Pages-Deployment via Actions
   eingerichtet. Branch: `claude/setup-webapp-project-GRQJQ`.
 
+- **2026-05-17** – Branch zu `main` umbenannt; Git-Workflow auf Feature-Branch
+  + Pull-Request umgestellt. Production-Deploy (GitHub Pages) läuft nur noch
+  bei Push auf `main`; separate `ci.yml` prüft Build auf Pull Requests.
+
 ## Nicht verhandelbare Leitplanken
 
 1. **Keine Diagnose, keine Therapieanweisung.** Die App informiert, ordnet ein
