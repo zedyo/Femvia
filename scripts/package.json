@@ -1,0 +1,11 @@
+{
+  "name": "femvia-concept-pdf",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pdf": "node generate-concept-pdf.mjs"
+  },
+  "dependencies": {
+    "pdfkit": "^0.15.0"
+  }
+}
